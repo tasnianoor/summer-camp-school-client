@@ -59,7 +59,7 @@ const PopularClasses = () => {
 
     return (
         <div className='px-6 md:px-10  mx-auto   text-orange-500'>
-            <p className='text-4xl font-bold mb-10 mt-10 text-center'>Our Popular Classes</p>
+            <p className='text-4xl font-bold mb-10 mt-10 text-center'style={{ fontFamily: ['Lucida Bright'] }}>Our Popular Classes</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5'>
                 {classData.slice(0, 6).map((classes) =>
                     <Fade>

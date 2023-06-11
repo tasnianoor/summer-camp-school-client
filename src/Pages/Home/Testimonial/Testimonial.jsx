@@ -106,7 +106,7 @@ const Review = () => {
     <div className="  w-full text-orange-500">
       <div className='my-5'>
         
-        <p className='font-bold text-center my-2 text-4xl text-orange-500'>Reviews</p>
+        <p className='font-bold text-center my-2 text-4xl text-orange-500' style={{ fontFamily: ['Lucida Bright'] }}>Reviews</p>
         <hr className='w-1/2 mx-auto' />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center items-center">

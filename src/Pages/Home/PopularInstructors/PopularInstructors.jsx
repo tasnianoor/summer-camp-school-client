@@ -91,7 +91,7 @@ const PopularInstructors = () => {
     // console.log(instructors)
     return (
         <div className='px-6 md:px-10  mx-auto w-full  text-orange-500'>
-            <p className='text-4xl  font-bold text-center mb-8 mt-10'>Our Popular Instructors</p>
+            <p className='text-4xl  font-bold text-center mb-8 mt-10' style={{ fontFamily: ['Lucida Bright'] }}>Our Popular Instructors</p>
             <div className='grid md:grid-cols-3 grid-cols-1 gap-5'>
                 {
                     instructors.slice(0, 6).map(instructor =>

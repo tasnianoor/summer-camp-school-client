@@ -92,7 +92,7 @@ const ManageUsers = () => {
         })
     }
     return (
-        <div className='w-full h-full py-10 px-5 bg-fuchsia-100 shadow-2xl my-10'>
+        <div className='w-full h-full py-10 px-5 bg-fuchsia-100 shadow-2xl '>
         <p className='text-3xl font-bold my-5 text-center'>All Users: {allUsers.length}</p>
         <div className="overflow-x-auto">
             <table className="table">

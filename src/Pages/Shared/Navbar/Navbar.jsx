@@ -412,12 +412,13 @@ const Navbar = () => {
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </label>
-                        <div tabIndex={0} className='md:space-x-8 menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-28'>
-                            <Link className={location.pathname === '/' && 'text-yellow-200'} to='/'>Home</Link>
-                            <Link className={location.pathname === '/instructors' && 'text-ywllow-200'} to='/instructors'>Instructors</Link>
-                            <Link className={location.pathname === '/classes' && 'text-yellow-200'} to='/classes'>Classes</Link>
+                        <div tabIndex={0} className='md:space-x-8 menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-28 ' style={{ fontFamily: ['Bruno Ace SC', 'cursive'] }}>
+                            <Link className={location.pathname === '/' && 'text-red-600'} to='/'>Home</Link>
+                            <Link className={location.pathname === '/instructors' && 'text-red-600'} to='/instructors'>Instructors</Link>
+                            <Link className={location.pathname === '/classes' && 'text-red-600'} to='/classes'>Classes</Link>
                         </div>
                     </div>
+                    {/* Comic Sans */}
                     <Link
                     to='/'
                     aria-label='Summer Camp Drawing School'
@@ -443,7 +444,7 @@ const Navbar = () => {
                 {
                     user ? <div className='flex items-center bg-pink-400 pl-5 pr-2 h-10 rounded-3xl md:hidden lg:hidden'>
                         <div className="dropdown dropdown-end">
-                            <label tabIndex={1} className="mx-3"><BsReverseLayoutSidebarInsetReverse className={`${theme === 'light' && 'text-red-900'}`} /></label>
+                            <label tabIndex={1} className="mx-3"><FaBars className={`${theme === 'light' && 'text-red-900'}`} /></label>
                             <ul tabIndex={1} className={`dropdown-content menu flex flex-col items-start p-2 shadow bg-base-100 rounded-box ${theme === 'light' && 'text-red-900'}`}>
                                 <li><Link to='/dashboard'>Dashboard</Link></li>
                                 <li><button onClick={handleSignOut}>Sign Out</button></li>
@@ -468,9 +469,9 @@ const Navbar = () => {
                     }
                     <input type="checkbox" onChange={handleToggle} className="toggle " checked={theme === "light" ? false : true} />
                 </div>
-                <Link className={location.pathname === '/' && 'text-yellow-200'} to='/'>Home</Link>
-                <Link className={location.pathname === '/instructors' && 'text-yellow-200'} to='/instructors'>Instructors</Link>
-                <Link className={location.pathname === '/classes' && 'text-yellow-200'} to='/classes'>Classes</Link>
+                <Link className={location.pathname === '/' && 'text-red-600 text-2xl' } to='/' style={{ fontFamily: ['Lucida Bright'] }}>Home</Link>
+                <Link className={location.pathname === '/instructors' && 'text-red-600 text-2xl'} to='/instructors' style={{ fontFamily: ['Lucida Bright'] }}>Instructors</Link>
+                <Link className={location.pathname === '/classes' && 'text-red-600 text-2xl'} to='/classes' style={{ fontFamily: ['Lucida Bright'] }}>Classes</Link>
                 {
                     user ? <div className='flex items-center bg-pink-400 pl-5 pr-2 h-10 w-20 rounded-3xl'>
                         <div className="dropdown dropdown-end">
@@ -486,7 +487,7 @@ const Navbar = () => {
                         }
 
                     </div> :
-                        <Link className={location.pathname === '/login' && 'text-pink-500'} to='/login'>Login</Link>
+                        <Link className={location.pathname === '/login' && 'text-pink-500 text-2xl' } to='/login' style={{ fontFamily: ['Lucida Bright'] }}>Login</Link>
                 }
             </div>
         </div>

@@ -367,7 +367,7 @@ const Login = () => {
                 <title>Rainbow || Login</title>
             </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0 " style={{ backgroundImage: `url("https://www.istockphoto.com/photo/little-blonde-girl-painting-on-big-white-paper-while-laying-on-the-floor-indoors-gm1020966732-274242377?phrase=kids%2Bdrawing")` }}>
-              <div className="text-center mx-auto p-5 md:p-10 form-control w-full max-w-sm bg-rose-300 rounded-2xl my-20"  >
+              <div className="text-center mx-auto p-5 md:p-10 form-control w-full max-w-sm bg-red-100 rounded-2xl my-20"  >
                 {
                     loading && <Loader/>
                 }

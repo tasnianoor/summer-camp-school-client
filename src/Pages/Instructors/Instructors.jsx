@@ -17,7 +17,7 @@ const Instructors = () => {
                 <title>Rainbow || Instructors</title>
             </Helmet>
             <div className='w-full md:p-10 px-10 mt-20 mx-auto bg-rose-200 text-black'>
-                <p className='text-3xl mb-10 font-bold my-5 text-center text-red-900'>All Instructors </p>
+                <p className='text-3xl mb-10 font-extrabold my-5 text-center text-red-900' style={{ fontFamily: ['Lucida Bright'] }}>All Of Our Instructors </p>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5 mx-auto'>
                     {
                         allInstructors.map(instructor =>

@@ -186,7 +186,7 @@ const Classes = () => {
             <title>Rainbow || All Classes</title>
         </Helmet>
         <div className='md:p-10 mt-20 bg-rose-200 text-black'>
-            <p className='text-3xl mb-10 font-bold  text-center text-red-900'>All Classes</p>
+            <p className='text-3xl mb-10 font-extrabold  text-center text-red-900' style={{ fontFamily: ['Lucida Bright'] }}>All Of Our Classes</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5'>
                 {allClasses.map((classes) =>
                 <Slide>

@@ -82,7 +82,7 @@ const ManageClasses = () => {
                             {allClasses.map((classes, index) =>
                                 <tr key={classes._id} className='hover'>
                                     <th>{index + 1}</th>
-                                    <td><img className='w-20' src={classes.image} alt="" /></td>
+                                    <td><img className='w-30 h-10' src={classes.image} alt="" /></td>
                                     <td>{classes.className}</td>
                                     <td>{classes.instructorName}</td>
                                     <td>{classes.instructorEmail}</td>

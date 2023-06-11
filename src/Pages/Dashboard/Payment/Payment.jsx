@@ -77,7 +77,7 @@ const Payment = () => {
             <Helmet>
                 <title>Rainbow || Payment</title>
             </Helmet>
-            <p className='text-4xl font-bold text-center mb-10'>Pay for enrol the class</p>
+            <p className='text-4xl font-bold text-center mb-10'>Payment For Enrolling</p>
             <Elements stripe={stripePromise}>
                 <CheckoutForm price={price} selectedClass={selectedClass}/>
             </Elements>
