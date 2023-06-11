@@ -58,12 +58,12 @@ const PopularClasses = () => {
     // console.log(classData)
 
     return (
-        <div className='px-6 md:px-10 mb-10 mx-auto mt-10'>
-            <p className='text-4xl font-bold mb-10 text-center'>Our Popular Classes</p>
+        <div className='px-6 md:px-10  mx-auto   text-orange-500'>
+            <p className='text-4xl font-bold mb-10 mt-10 text-center'>Our Popular Classes</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5'>
                 {classData.slice(0, 6).map((classes) =>
                     <Fade>
-                        <div key={classes._id} className={`card w-full group glass ${classes.seats === 0 && 'bg-red-600'}`}>
+                        <div key={classes._id} className={`card w-90 group glass ${classes.seats === 0 && 'bg-red-800'}`}>
                             <figure><img className='w-full h-80 group-hover:scale-110' src={classes.image} /></figure>
                             <div className="card-body">
                                 <p className='font-semibold'>Class name: <span className='font-normal'>{classes.className}</span></p>
@@ -71,7 +71,7 @@ const PopularClasses = () => {
                                 <p className='font-semibold'>Available Seats: <span className='font-normal'>{classes.seats}</span></p>
                                 <p className='font-semibold'>Enrolled Students: <span className='font-normal'>{classes?.enrolledStudents}</span></p>
                                 <p className='font-semibold'>Price: <span className='font-normal'>${classes.price}</span></p>
-                                <button onClick={() => handleSelect(classes)} className="btn btn-primary">Select</button>
+                                <button onClick={() => handleSelect(classes)} className="btn btn-error">Select</button>
                             </div>
                         </div>
                     </Fade>

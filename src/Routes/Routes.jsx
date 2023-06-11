@@ -201,7 +201,7 @@ export const router = createBrowserRouter([
             {
                 path: 'payment/:id',
                 element : <StudentRoute><Payment/></StudentRoute>,
-                loader : ({params}) => fetch(`${import.meta.env.VITE_BASE_URL}/selected-classes/${params.id}`) 
+                loader : ({params}) => fetch(`${import.meta.env.VITE_BASE_URL}/selected-class/${params.id}`) 
             },
             {
                 path: 'my-enrolled-classes',

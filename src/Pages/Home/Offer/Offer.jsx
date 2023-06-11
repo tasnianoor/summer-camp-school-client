@@ -8,7 +8,7 @@ const Offer = () => {
     Aos.init();
   }, []);
   return (
-    <div>
+    <div className="text-orange-600">
            
       <div className="h-[300px] sm:h-[500px] flex sm:items-center  bg-cover bg-center bg-[url('https://d1ef7ke0x2i9g8.cloudfront.net/bangkok/_large1400/254805/These-Studios-and-Spaces-Offer-Art-Classes-to-Kids-in-Bangkok.webp')]  mb-5">
 

@@ -185,13 +185,13 @@ const Classes = () => {
         <Helmet>
             <title>Rainbow || All Classes</title>
         </Helmet>
-        <div className='md:p-10 my-20 bg-rose-200 text-black'>
-            <p className='text-3xl font-bold mb-10 text-center text-red-900'>All Classes</p>
+        <div className='md:p-10 mt-20 bg-rose-200 text-black'>
+            <p className='text-3xl mb-10 font-bold  text-center text-red-900'>All Classes</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5'>
                 {allClasses.map((classes) =>
                 <Rotate>
 
-                    <div key={classes._id} className={`card w-full group glass ${classes.seats === 0 && 'bg-red-600'}`}>
+                    <div key={classes._id} className={`card w-full group glass ${classes.seats === 0 && 'bg-red-800'}`}>
                         <figure><img className='w-full h-80 group-hover:scale-110' src={classes.image} /></figure>
                         <div className="card-body">
                             <p className='font-semibold'>Class name: <span className='font-normal'>{classes.className}</span></p>

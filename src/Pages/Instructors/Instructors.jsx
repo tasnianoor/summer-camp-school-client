@@ -16,8 +16,8 @@ const Instructors = () => {
             <Helmet>
                 <title>Rainbow || Instructors</title>
             </Helmet>
-            <div className='w-11/12 px-10 my-10 mx-auto'>
-                <p className='text-3xl font-bold my-5 text-center'>All Instructors </p>
+            <div className='w-full md:p-10 px-10 mt-20 mx-auto bg-rose-200 text-black'>
+                <p className='text-3xl mb-10 font-bold my-5 text-center text-red-900'>All Instructors </p>
                 <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5 mx-auto'>
                     {
                         allInstructors.map(instructor =>
