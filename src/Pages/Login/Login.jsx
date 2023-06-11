@@ -386,7 +386,8 @@ const Login = () => {
                     {errors?.password?.type === 'required' && <p className='text-red-800 mb-2'>This field is required</p>}
                     <p className='mb-3'>Have not any account ? <Link to='/sign-up'><span className='underline'>Cerate Account</span></Link></p>
                     <p className='text-red-800 py-3'>{error}</p>
-                    <button type='submit' className='btn  btn-error font-bold'>Login</button>
+                    <button type='submit' className='btn  btn-error font-bold'>
+                         Login</button>
                 </form>
                 <div className='divider'>Or</div>
                 <div onClick={handleGoogleSignIn} className='cursor-pointer flex items-center justify-evenly w-full py-3 px-2 md:px-10 mx-auto border-2 mt-3 border-red-900 rounded-full'><FcGoogle className='w-7 h-7' /> <p className='font-bold md:text-xl text-center'>Sign in with Google</p></div>

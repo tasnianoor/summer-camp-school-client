@@ -226,7 +226,7 @@ const CheckoutForm = ({ price, selectedClass }) => {
             />
             <p className='my-3 text-red-800'>{cardError}</p>
             {/* <button type="submit" className='my-10 w-1/3 mx-auto btn btn-primary text-xl font-semibold'>Pay</button> */}
-            <button className='btn  btn-primary btn-sm mt-4' type="submit" >
+            <button className='btn  btn-error btn-sm mt-4' type="submit" >
           Pay
         </button>
         </form>

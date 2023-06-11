@@ -213,7 +213,7 @@ const MyClasses = () => {
     })
     console.log(allClasses)
     return (
-        <div className='w-11/12 py-10 px-5 bg-red-200 shadow-2xl my-10'>
+        <div className='w-full py-10 px-5 bg-red-200 shadow-2xl '>
             <p className='text-3xl font-bold my-5 text-center'>My Classes : {allClasses.length}</p>
             <div className="overflow-x-auto">
                 <table className="table">
@@ -235,7 +235,7 @@ const MyClasses = () => {
                         {allClasses.map((classes, index) =>
                             <tr key={classes._id} className='hover'>
                                 <th>{index + 1}</th>
-                                <td><img className='w-20' src={classes.image} alt="" /></td>
+                                <td><img className='w-20 h-20' src={classes.image} alt="" /></td>
                                 <td>{classes.className}</td>
                                 <td>{classes.price}</td>
                                 <td>{classes.seats}</td>

@@ -571,7 +571,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
-import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FaEye, FaEyeSlash, FaSignInAlt } from "react-icons/fa";
 import { Helmet } from "react-helmet";
 import { useAuth } from '../../Hooks/useAuth';
 import Loader from '../Shared/Loader/Loader';
@@ -705,7 +705,7 @@ const Login = () => {
                     <input type="file" className="file-input file-input-bordered file-input-error w-full mb-3" {...register('photo')} />
                     <p className='mb-3'>Already have an account ? <Link to='/login'><span className='underline'>Please login</span></Link></p>
                     <p className='text-red-800 py-3'>{error}</p>
-                    <button type='submit' className='btn  btn-error font-bold'>Sign Up</button>
+                    <button type='submit' className='btn  btn-error font-bold'><FaSignInAlt/>Sign Up</button>
                 </form>
                 <div className='divider'>Or</div>
                 <div onClick={handleGoogleSignIn} className='cursor-pointer flex items-center justify-evenly w-full py-3 px-2 md:px-10 mx-auto border-2 mt-3 border-red-900 rounded-full'><FcGoogle className='w-7 h-7' /> <p className='font-bold md:text-xl text-center'>Sign in with Google</p></div>

@@ -138,7 +138,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../../Hooks/useAuth';
 import Swal from 'sweetalert2';
 import { Helmet } from 'react-helmet';
-import { AttentionSeeker, Rotate } from 'react-awesome-reveal';
+import {  Slide} from 'react-awesome-reveal';
 
 const Classes = () => {
     const { user } = useAuth()
@@ -189,7 +189,7 @@ const Classes = () => {
             <p className='text-3xl mb-10 font-bold  text-center text-red-900'>All Classes</p>
             <div className='grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-5'>
                 {allClasses.map((classes) =>
-                <Rotate>
+                <Slide>
 
                     <div key={classes._id} className={`card w-full group glass ${classes.seats === 0 && 'bg-red-800'}`}>
                         <figure><img className='w-full h-80 group-hover:scale-110' src={classes.image} /></figure>
@@ -201,7 +201,7 @@ const Classes = () => {
                             <button disabled={classes.seats === 0 ? 'disabled' : currentUser.role === 'admin' || currentUser.role === 'instructor' ? 'disabled' : ''} onClick={() => handleSelect(classes)} className="btn btn-error text-black">Select</button>
                         </div>
                     </div>
-                </Rotate>
+                </Slide>
                     )}
             </div>
         </div>

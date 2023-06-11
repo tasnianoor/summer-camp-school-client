@@ -20,7 +20,7 @@ const Offer = () => {
           <p className='text-6xl font-bold text-center items-center mx-auto'>Our Offered Courses</p>
             <div className="bg-pink-500 px-4 sm:px-6 py-4 rounded-full">
          
-              <p className="text-2xl sm:text-3xl text-left font-bold -mt-3">
+              <p className="text-2xl sm:text-3xl text-left font-bold -mt-3 text-white">
                Get Upto
               </p>
               <p className="text-3xl sm:text-5xl font-bold text-white">

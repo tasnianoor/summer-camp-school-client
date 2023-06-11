@@ -82,7 +82,7 @@ const PaymentHistory = () => {
                 </thead>
                 <tbody>
                     {paymentHistory.map((payment, index) =>
-                        <tr key={payment._id} className='hover'>
+                        <tr key={payment._id} className='hover '>
                             <th>{index + 1}</th>
                             <td>{payment.email}</td>
                             <td>{payment.transactionId}</td>
