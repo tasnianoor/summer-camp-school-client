@@ -52,10 +52,10 @@ const PopularClasses = () => {
                         text: 'Class selected successfully',
                     })
                 }
-                // console.log(res.data)
+               
             })
     }
-    // console.log(classData)
+   
 
     return (
         <div className='px-6 md:px-10  mx-auto   text-orange-500'>
