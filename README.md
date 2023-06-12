@@ -4,6 +4,16 @@
 
 ## Github Link Server Side:https://github.com/programming-hero-web-course1/b7a12-summer-camp-server_side-tasnianoor
 
+## Admin email:nabila@gmail.com
+## Admin password:123456A#
+
+## instructor email:taina@gmail.com
+## instructor password:123456A#
+
+## student email:noor@gmail.com
+## student password:123456A#
+
+
 ## Features : 
     *A new user will be a student in this website. 
     * Only admin can see the all users and can change the user role student to instructor or admin. Only he can approve or denies the classes by added a instructor. 
