@@ -76,7 +76,7 @@
 //     return (
 //         <>
 //             <Helmet>
-//                 <title>MindFulness || Login</title>
+//                 <title>Rainbow || Login</title>
 //             </Helmet>
 //             <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0" >
 //             <div className="text-center mx-auto p-5 md:p-10 form-control w-full max-w-sm bg-yellow-300 rounded-2xl my-20"  >
@@ -220,7 +220,7 @@
 //     return (
 //         <>
 //             <Helmet>
-//                 <title>MindFulness || Login</title>
+//                 <title>Rainbow || Login</title>
 //             </Helmet>
 
 //             <div className="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-0" >

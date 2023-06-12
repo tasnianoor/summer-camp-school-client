@@ -65,8 +65,8 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import React from 'react';
-import { FaUserAlt } from 'react-icons/fa';
-import { RiAdminFill } from 'react-icons/ri';
+import { FaChalkboardTeacher } from 'react-icons/fa';
+import {  RiAdminLine } from 'react-icons/ri';
 import Swal from 'sweetalert2';
 
 const ManageUsers = () => {
@@ -112,8 +112,8 @@ const ManageUsers = () => {
                             <th>{index + 1}</th>
                             <td>{user.name}</td>
                             <td>{user.email}</td>
-                            <td><button disabled={user.role === 'instructor'} onClick={()=>handleUpdate(user._id, 'instructor')} className='btn btn-primary text-white'><FaUserAlt className='w-5 h-5'/></button></td>
-                            <td><button disabled={user.role === 'admin'} onClick={()=>handleUpdate(user._id, 'admin')}  className='btn btn-primary text-white'><RiAdminFill className='w-5 h-5'/></button></td>
+                            <td><button disabled={user.role === 'instructor'} onClick={()=>handleUpdate(user._id, 'instructor')} className='btn btn-primary text-white'><FaChalkboardTeacher className='w-5 h-5'/></button></td>
+                            <td><button disabled={user.role === 'admin'} onClick={()=>handleUpdate(user._id, 'admin')}  className='btn btn-primary text-white'><RiAdminLine className='w-5 h-5'/></button></td>
                            
                         </tr>)}
 

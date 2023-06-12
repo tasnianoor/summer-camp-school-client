@@ -17,7 +17,7 @@ const ManageClasses = () => {
 
     // console.log(allClasses)
     const handleUpdate = (id, status) => {
-        fetch(`http://localhost:3000/all-classes/${id}?status=${status}`, {
+        fetch(`${import.meta.env.VITE_BASE_URL}/all-classes/${id}?status=${status}`, {
             method: 'PUT'
         })
             .then(res => res.json())
