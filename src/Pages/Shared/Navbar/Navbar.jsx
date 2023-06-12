@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 import { useAuth } from '../../../Hooks/useAuth';
 import {  FaBars,FaUser } from 'react-icons/fa';
-import { BsReverseLayoutSidebarInsetReverse} from 'react-icons/bs';
 import logo1 from '../../../assets/images/logo1.png'
 import { HiOutlineLightBulb } from 'react-icons/hi';
 import { FcNightLandscape } from 'react-icons/fc';
