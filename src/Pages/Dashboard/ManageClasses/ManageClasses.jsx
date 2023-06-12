@@ -3,8 +3,7 @@ import axios from 'axios';
 import React, {useState } from 'react';
 
 const ManageClasses = () => {
-    /**Class Image, Class name, Instructor name, Instructor email, Available seats, Price, 
-     * Status(pending/approved/denied) 3 buttons( Approve, Deny and send feedback */
+    
     const [modal, setModal] = useState(false)
     const [selectedClassId, setSelectedClassId] = useState(null);
     const { data: allClasses = [], refetch } = useQuery({
@@ -34,7 +33,7 @@ const ManageClasses = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const feedback = event.target.feedback.value;
-        const id = selectedClassId; // Access the selected class ID
+        const id = selectedClassId; 
         axios.put(`${import.meta.env.VITE_BASE_URL}/${id}?feedback=${feedback}`)
             .then((res) => {
                 console.log(res.data);
