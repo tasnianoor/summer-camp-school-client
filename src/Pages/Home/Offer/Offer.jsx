@@ -51,7 +51,7 @@ const Offer = () => {
           </div>
         </div>
         <div
-          className="h-80 w-full sm:w-1/3 bg-cover bg-center bg-[url('https://thumbs.dreamstime.com/z/portrait-senior-art-teacher-leaning-over-easel-to-watch-little-student-painting-pictures-school-copy-space-children-class-115101848.jpg')] flex items-center justify-center rounded-2xl shadow-md"
+          className="h-80 w-full sm:w-1/3 bg-cover bg-center bg-[url('https://i.ytimg.com/vi/p56qMUyhAGk/maxresdefault.jpg')] flex items-center justify-center rounded-2xl shadow-md"
           data-aos="fade-up"
         >
           <div className="bg-white bg-opacity-70 shadow-md text-center p-12 rounded-3xl w-fit">
